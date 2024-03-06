@@ -1,13 +1,34 @@
+/* site colors
+F6F3EC - white flour
+E9D9C9 -  beauty
+9D6F4D - Tigerye
+967860 -  warm stone
+9F9685 - wool
+1D1D1D - inkwell
+313D49 - naval (albastru inchis misto)
+525662 - mineral gray
+*/
+
 *{
     margin: 0;
     padding: 0;
 }
 
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+::selection{
+    background-color: #ddc09d;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
-
     align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.23573179271708689) 0%, rgba(255,255,255,1) 100%);
 }
 
 .nav_content li{
@@ -19,5 +40,58 @@
 
 .nav_content a{
     text-decoration: none;
+    font-size: 22px;
+    color: #1D1D1D;
+    transition: 1s;
+}
+
+.nav_content a:hover{
+    color: #525662;
+}
+
+.main{
+    background-image: url(./assets/test.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.landing_part{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
     font-size: 20px;
+}
+
+.landing_text{
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #1D1D1D;
+}
+
+a.landing_button{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #422f17;
+    transition: 1s;
+}
+
+a.landing_button:hover{
+    background-color: #5a4021;
+}
+
+@media only screen and (max-width: 425px) {
+    .navbar{
+      text-align: center;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
 }

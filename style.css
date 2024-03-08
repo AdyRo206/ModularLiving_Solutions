@@ -87,12 +87,23 @@ a.landing_button:hover{
     background-color: #5a4021;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 580px) {
     .navbar{
       text-align: center;
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
+    }
+    .footer_des{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+        align-items: center;
+    }
+    .footer_left{
+        width: 80% !important;
+        margin-bottom: 5%;
     }
 }
 
@@ -116,6 +127,7 @@ a.landing_button:hover{
 
 .footer_right{
     display: flex;
+    float: right;
 }
 
 .social i{
